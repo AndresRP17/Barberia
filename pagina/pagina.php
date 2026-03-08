@@ -3,10 +3,8 @@ session_start();
 include("../conx.php");
 
 if(!isset($_SESSION['usuario'])){
-    // Si querés depurar:
-    echo "<pre>";
-    var_dump($_POST);
-    echo "</pre>";
+    header("Location: ../login/index.php");
+    exit();
 }
 
 // Verificar que lleguen todos los campos
@@ -61,7 +59,7 @@ if(isset($_POST['servicio'], $_POST['pago'], $_POST['horario'], $_POST['fecha'])
             <a href="../login/logout.php" class="aaa"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
         </nav>
     </header>
-   <p style="color: white"> Hola <?= $_SESSION['name']; ?>, bienvenido 👋</p>
+   <p style="color: white"> Hola <?= $_SESSION['name']; ?>, bienvenida/o 👋</p>
 
         <div class="cont0" id="infot">
         <div class="info">
@@ -191,7 +189,7 @@ if(isset($_POST['servicio'], $_POST['pago'], $_POST['horario'], $_POST['fecha'])
                 <li><a href="#">Contacto</a></li>
             </ul>
             <div class="copy">
-                Copyright 2025
+                Copyright 2026
             </div>
         </div>
     </div>

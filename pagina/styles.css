@@ -161,6 +161,7 @@ header{
 .img1 img{
     width: 600px;
     border-radius: 15px;
+    background: transparent;
 }
 
 .cards{

@@ -27,13 +27,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['usuario'] = $fila['correo'];
 
         $_SESSION['id'] = $fila['id_cliente'];
-        $_SESSION['name'] = $fila['nombre'];   // 👈 guardamos el nombre
+        $_SESSION['name'] = $fila['nombre']; 
 
         header("location: ../pagina/pagina.php");
         exit();
 
     } else {
-        echo "Usuario o contraseña incorrectos";
+        header("location: login.php?error=1");
+        exit();
     }
 }
 ?>
