@@ -174,11 +174,11 @@ if(isset($_POST['servicio'], $_POST['pago'], $_POST['horario'], $_POST['fecha'])
 <footer>
     <div class="contenedor-footer">
         <div class="social" id="social">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" data-social="Facebook" style="--social-color:blue"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" data-social="Whatsapp"style="--social-color:green"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"data-social="Twitter/X"style="--social-color:black"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"data-social="Telegram"style="--social-color:#0088CC"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"data-social="Instagram"style="--social-color:#DD2A7B"><i class="fa-brands fa-instagram"></i></a>
         </div>
 
         <div class="names">
