@@ -29,16 +29,15 @@
         </footer>
     </form>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <?php if(isset($_GET['error'])){ ?>
 <script>
-
-    swal.fire({
+ Swal.fire({
         title: 'Oops...',
         text:  'Usuario o contraseña incorrectos',
         icon: 'error',
